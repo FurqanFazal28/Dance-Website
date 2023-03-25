@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#banner {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: small-caps bold 28px/1 sans-serif;
+    background: center / cover no-repeat url("contactus.webp");
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.content {
+    position: relative;
+    z-index: 11;
+    color: white;
+}
+
+.content h1 {
+    font-size: 6.5rem;
+}
+
+.cont h1 {
+    margin-left: 145px;
+    margin-top: 68px;
+}
+
+.cont p {
+    margin-left: 78px;
+    color: rgb(245, 139, 139);
+
+}
+
+.myForm {
+    margin-top: 50px;
+}
+
+.myForm input:focus {
+    box-shadow: none;
+    border-color: rgb(245, 139, 139) !important;
+}
+
+.myForm textarea:focus {
+    box-shadow: none;
+    border-color: rgb(245, 139, 139) !important;
+}
+
+.label {
+    color: rgb(245, 139, 139);
+}
+
+.btn3 {
+    margin-left: 273px;
+    transform: skewX(-15deg);
+    padding-inline: 14px;
+    padding-block: 7px;
+    border: none;
+    background-color: rgb(245, 139, 139);
+    cursor: pointer;
+}
+
+.btn3:hover {
+    background-color: rgb(40 45 60 / 97%);
+    color: white;
+
+}
+#success{
+    margin-left: 226px;
+    font-weight: bold;
+}

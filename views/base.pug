@@ -1,0 +1,62 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Dancing Website
+    link(rel='icon' type='image/x-icon' href='../static/logo.jpg')
+    block scripts
+    block style 
+        style 
+            include ../static/style.css
+        
+  body
+    block header 
+        nav#navbar
+            ul
+                li 
+                    a(class ="logo" href='')
+                        img(src='../static/logo.jpg' class="logo")
+                li
+                    a(class ="link" href='/') Home
+                li
+                    a(class ="link" href='/') About
+                li
+                    a(class ="link" href='/') Service
+                li
+                    a(class ="link" href='/contact') Contact
+    block content
+    block foot
+        footer#footer
+            div.foot
+                h1 Address 
+                p 102 Broadmay New York,
+                    br
+                    |NY, 24681 
+                    br
+                    |example@dance_studio.com 
+                    br
+                    |1-002-448-568
+            div.foot
+                h1 Open Hours 
+                p Monday 11am-7pm 
+                    br 
+                    |Tuesday-Friday 11am-8pm 
+                    br 
+                    |Saturday 10am-6pm 
+                    br 
+                    |Sunday 11am-6pm 
+            div.foot
+                h1 About 
+                a(href="/")|Partners 
+                a(href="/")|Events Calendar
+                a(href="/")|Member Forum
+                a(href="/")|Our Story  
+            div.foot
+                h1 Socials 
+                a(href="/")|Linkdin
+                a(href="/")|Instagram 
+                a(href="/")|Facebook 
+                a(href="/")|Tweeter   
+            p#copy  This is a sample website - cmsmasters © 2022 / All Rights Reserved

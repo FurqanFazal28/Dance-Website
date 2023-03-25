@@ -1,0 +1,43 @@
+extends base.pug
+block scripts  
+block append style 
+    link(rel="stylesheet", href="../static/contact.css") 
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css", integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2", crossorigin="anonymous")   
+block content 
+    section#banner 
+        div.content 
+            h1 Contact Us
+    section#contact 
+        div.container-fluid
+            div.row
+                div.col-lg-6
+                  img(src="../static/contact.jpg", alt="")
+                div.col-lg-6.cont
+                    h1 Get in touch                 
+                    p Our team of dance ninjas is ready to hear from you
+                    form#myForm1.myForm(action="/contact", method="post")
+                        .row
+                            .mb-3.col-6
+                                label.form-label.label(for='formGroupExampleInput') Name
+                                input#name.form-control(type='text' name="name" placeholder='Enter Name')
+                            .mb-3.col-6
+                                label.form-label.label(for='formGroupExampleInput2') Father Name
+                                input#formGroupExampleInput2.form-control(type='text' name="fname" placeholder='Enter Father Name')
+                            .mb-3.col-12
+                                    label.form-label.label(for='formGroupExampleInput') Address
+                                    input#formGroupExampleInput.form-control(type='text' name="address" placeholder='Enter Address')
+                            .mb-3.col-6
+                                label.form-label.label(for='formGroupExampleInput') Contact Number
+                                input#formGroupExampleInput.form-control(type='phone' name="phone" placeholder='Enter Contact Number')
+                            .mb-3.col-6
+                                label.form-label.label(for='formGroupExampleInput2') Email Address
+                                input#formGroupExampleInput2.form-control(type='email' name="email" placeholder='Enter Email')
+                            .mb-3.col-12
+                                label.form-label.label(for='formGroupExampleInput') Message
+                                textarea.form-control#textArea(type='text' name="decs" placeholder='Enter Your Concern')  
+                            button#submit.btn3(type='submit') Submit
+                    .valid-feedback#success
+                                | Successfuly Submitted! 
+    script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js' integrity='sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p' crossorigin='anonymous')
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js' integrity='sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF' crossorigin='anonymous')
+
